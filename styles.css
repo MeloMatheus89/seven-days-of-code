@@ -7,8 +7,9 @@
   --fonte-padrao: "Inter";
   --cinza-titulo: #3a404e;
   --branco: #ffffff;
-  --cinza-menu: #667085;
+  --cinza-principal: #667085;
   --vinho: #8e2424;
+  --preto-titulo: #101828;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 }
 
 .navbar__menu__link {
-  color: var(--cinza-menu);
+  color: var(--cinza-principal);
   font-family: var(--fonte-padrao);
   font-size: 16px;
   text-decoration: none;
@@ -47,7 +48,7 @@ body {
 
 .menu__usuarios__entrar {
   font-family: var(--fonte-padrao);
-  color: var(--cinza-menu);
+  color: var(--cinza-principal);
   font-size: 16px;
   text-decoration: none;
   padding: 1em;
@@ -60,4 +61,39 @@ body {
   border-radius: 10px; /* Esse é o que faz parece uma borda redonda*/
   background-color: var(--vinho);
   padding: 1em;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secoes__titulos {
+  padding-top: 5em;
+  font-family: var(--fonte-padrao);
+  color: var(--vinho);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cabecalho__titulo {
+  font-family: var(--fonte-padrao);
+  color: var(--preto-titulo);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.cabecalho__texto {
+  font-family: var(--fonte-padrao);
+  color: var(--cinza-principal);
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2em;
+  margin: 0 15em;
 }
