@@ -97,3 +97,32 @@ body {
   padding: 2em;
   margin: 0 15em;
 }
+
+.metricas__container,
+.metrica {
+  display: flex;
+}
+.metricas__container {
+  margin: 0 7em 6em 7em;
+  align-items: center;
+  justify-content: center;
+}
+.metrica {
+  flex-direction: column;
+  width: 280px;
+}
+.metrica__numero {
+  color: var(--vinho);
+  font-family: var(--fonte-padrao);
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+}
+.metrica__subtitulo {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--preto-titulo);
+}
+.metrica__texto {
+  color: var(--cinza-principal);
+}
